@@ -17,7 +17,19 @@ export interface FrameConfig {
 export const COUNTRY_CODE = "FR";
 export const COUNTRY_LABEL = "FRA";
 
-export const PRICE_EUR = 29.99;
+export const PRICE_SOLO = 29.99;
+export const PRICE_DUO = 35.99;
+
+// Prix selon le modèle.
+export function priceFor(type: FrameType): number {
+  return type === "duo" ? PRICE_DUO : PRICE_SOLO;
+}
+
+// Rétro-compatibilité (ancien nom encore importé ailleurs).
+export const PRICE_EUR = PRICE_SOLO;
+
+// Dimensions physiques du cadre.
+export const FRAME_DIMENSIONS = "27 × 21 × 1,4 cm";
 
 export const defaultConfig: FrameConfig = {
   type: "solo",

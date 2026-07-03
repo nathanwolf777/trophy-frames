@@ -9,7 +9,8 @@ import {
   defaultConfig,
   COUNTRY_LABEL,
   flagEmoji,
-  PRICE_EUR,
+  priceFor,
+  FRAME_DIMENSIONS,
 } from "@/data/product";
 
 export default function Configurator({
@@ -251,14 +252,17 @@ export default function Configurator({
                   Cadre {isDuo ? "Duo" : "Solo"}
                 </span>
                 <span className="text-2xl font-semibold">
-                  {PRICE_EUR.toLocaleString("fr-FR", {
+                  {priceFor(config.type).toLocaleString("fr-FR", {
                     style: "currency",
                     currency: "EUR",
                   })}
                 </span>
               </div>
-              <div className="text-xs text-mist mb-5">
+              <div className="text-xs text-mist mb-1">
                 Livraison gratuite · Fabriqué à la demande
+              </div>
+              <div className="text-xs text-mist mb-5">
+                Dimensions : {FRAME_DIMENSIONS}
               </div>
 
               {error && (

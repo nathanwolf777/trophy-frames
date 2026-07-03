@@ -14,7 +14,7 @@ export default function PrivacyPage() {
       sections={[
         {
           h: "1. Responsable du traitement",
-          p: "TrophyFrames est responsable du traitement des données personnelles collectées sur son site, conformément au Règlement Général sur la Protection des Données (RGPD).",
+          p: "Le responsable du traitement est Nathan Oumeila, entrepreneur individuel (EI), SIRET 10634668700010, 105B chemin de Boissonnier, 26120 Ourches — éditeur du site TrophyFrames. Les données sont traitées conformément au Règlement Général sur la Protection des Données (RGPD). Contact : trophyframespro@gmail.com.",
         },
         {
           h: "2. Données collectées",

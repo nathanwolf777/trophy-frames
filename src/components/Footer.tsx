@@ -54,6 +54,14 @@ export default function Footer() {
                   Confidentialité
                 </Link>
               </li>
+              <li>
+                <Link
+                  href="/mentions-legales"
+                  className="text-pearl/80 hover:text-pearl"
+                >
+                  Mentions légales
+                </Link>
+              </li>
             </ul>
           </div>
         </div>

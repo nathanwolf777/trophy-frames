@@ -4,7 +4,7 @@ import Link from "next/link";
 import Image from "next/image";
 import { motion } from "framer-motion";
 import Reveal from "@/components/Reveal";
-import { PRICE_EUR } from "@/data/product";
+import { PRICE_SOLO } from "@/data/product";
 
 const features = [
   {
@@ -82,7 +82,8 @@ export default function Home() {
               </Link>
               <div className="text-sm text-mist">
                 <span className="text-pearl font-semibold text-lg">
-                  {PRICE_EUR.toLocaleString("fr-FR", {
+                  À partir de{" "}
+                  {PRICE_SOLO.toLocaleString("fr-FR", {
                     style: "currency",
                     currency: "EUR",
                   })}
@@ -227,8 +228,8 @@ export default function Home() {
                 Prêt à immortaliser votre exploit ?
               </h2>
               <p className="text-mist mb-8 max-w-md mx-auto">
-                Créez votre cadre en quelques minutes. {PRICE_EUR}€ · livraison
-                gratuite.
+                Créez votre cadre en quelques minutes. À partir de {PRICE_SOLO}€
+                · livraison gratuite.
               </p>
               <Link
                 href="/configurateur"

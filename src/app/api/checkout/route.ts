@@ -1,6 +1,6 @@
 import { NextRequest, NextResponse } from "next/server";
 import { stripe } from "@/lib/stripe";
-import { PRICE_EUR, FrameConfig } from "@/data/product";
+import { priceFor, FrameConfig } from "@/data/product";
 
 export async function POST(req: NextRequest) {
   try {
@@ -31,7 +31,7 @@ export async function POST(req: NextRequest) {
                   : `${config.firstName} ${config.lastName}`
               } · #OV ${config.rankingOverall} · #AG ${config.rankingAge}`,
             },
-            unit_amount: Math.round(PRICE_EUR * 100),
+            unit_amount: Math.round(priceFor(config.type) * 100),
           },
           quantity: 1,
         },

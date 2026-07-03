@@ -125,7 +125,8 @@ export default function ContactPage() {
 
         <Reveal delay={0.2}>
           <div className="mt-8 text-center text-sm text-mist">
-            Nous répondons généralement sous 24 h.
+            Ou par email :{" "}
+            <span className="text-pearl">trophyframespro@gmail.com</span>
           </div>
         </Reveal>
       </div>

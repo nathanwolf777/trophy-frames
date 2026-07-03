@@ -12,7 +12,11 @@ const faqs = [
   },
   {
     q: "Quelle est la différence entre le cadre Solo et Duo ?",
-    a: "Le cadre Solo met en avant une performance individuelle avec votre prénom et nom. Le cadre Duo affiche deux participants et le temps de l'équipe — idéal pour les compétitions par binôme.",
+    a: "Le cadre Solo met en avant une performance individuelle (29,99 €). Le cadre Duo affiche deux participants et le temps de l'équipe (35,99 €) — idéal pour les compétitions par binôme.",
+  },
+  {
+    q: "Quelles sont les dimensions du cadre ?",
+    a: "Chaque cadre mesure 27 cm de longueur, 21 cm de largeur et 1,4 cm d'épaisseur. Un format pensé pour être posé ou accroché facilement.",
   },
   {
     q: "Quel est le délai de livraison ?",
@@ -23,8 +27,8 @@ const faqs = [
     a: "Oui. La livraison est offerte, sans montant minimum, vers l'ensemble des pays desservis.",
   },
   {
-    q: "Quel format d'image pour le visuel central ?",
-    a: "Vous pouvez importer une image PNG ou JPG jusqu'à 3 Mo. Pour un rendu optimal, privilégiez une image carrée et de bonne résolution (logo, photo de podium, dossard…).",
+    q: "Comment fonctionne l'emplacement pour le patch ?",
+    a: "Le centre du cadre comporte une bande velcro. Vous y collez vous-même le patch reçu lors de votre compétition, à la réception du cadre. Rien à envoyer de votre côté au moment de la commande.",
   },
   {
     q: "Le paiement est-il sécurisé ?",
